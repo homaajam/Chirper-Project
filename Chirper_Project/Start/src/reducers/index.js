@@ -1,4 +1,10 @@
-/*
-Import loading bar as: import loadingBar from "./loadingBar";
-Use it int he combineReducers as: loadingBar,
-*/
+import {combineReducers} from "redux";
+import users from "./user";
+import tweets from "./tweets";
+import authedUser from "./authedUser";
+
+export default combineReducers({
+  users,
+  tweets,
+  authedUser,
+});
